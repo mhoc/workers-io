@@ -2,8 +2,8 @@ import { isLeft } from "fp-ts/lib/Either";
 import * as io from "io-ts";
 import reporter from "io-ts-reporters";
 
-export interface IOFetchJSONSuccess<B> {
-  body: B;
+export interface IOFetchJSONSuccess<B extends io.TypeC<any>> {
+  body: io.TypeOf<B>;
   response: Response;
 }
 

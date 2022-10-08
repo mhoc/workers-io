@@ -1,7 +1,7 @@
 /// <reference types="@cloudflare/workers-types" />
 import * as io from "io-ts";
-export interface IOFetchJSONSuccess<B> {
-    body: B;
+export interface IOFetchJSONSuccess<B extends io.TypeC<any>> {
+    body: io.TypeOf<B>;
     response: Response;
 }
 /**
