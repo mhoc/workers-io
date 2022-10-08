@@ -25,4 +25,4 @@ export interface IOFetchJSONSuccess<B> {
  * console.log(body.userId) // compiles, and guaranteed to be a string
  * ```
  */
-export declare const iofetch_json: <B extends io.TypeC<any>>(spec: B, request: Request, requestInitr?: RequestInit | Request) => Promise<IOFetchJSONSuccess<B>>;
+export declare const iofetch_json: <B extends io.TypeC<any>>(spec: B, request: Request | string, requestInitr?: RequestInit | Request) => Promise<IOFetchJSONSuccess<B>>;
