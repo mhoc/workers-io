@@ -4,14 +4,11 @@
 		"lib": [ "es2021" ],
 		"module": "es2022",
 		"moduleResolution": "node",
-		"types": [
-			"@cloudflare/workers-types"
-		],
+		"types": ["@cloudflare/workers-types"],
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
-		"skipLibCheck": true,
 		"outDir": "dist"
 	}
 }
